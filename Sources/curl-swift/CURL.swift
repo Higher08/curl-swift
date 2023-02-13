@@ -11,7 +11,7 @@ public struct Response {
 }
 
 public class CURL {
-    private var handle: UnsafeMutableRawPointer!
+    public var handle: UnsafeMutableRawPointer!
     public var headers: [HTTPHeader]
 
     public var connectTimeout: Int = 300 {
