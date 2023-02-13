@@ -2,6 +2,7 @@
 #define CURL_EXTENSIONS
 
 #include <stdbool.h>
+#include <stdlib.h>
 #include <curl/curl.h>
 
 static CURLcode curl_easy_setopt_string(CURL *curl, CURLoption option, const char *param) {
