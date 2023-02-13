@@ -55,7 +55,7 @@ static size_t curl_write_callback_fn(void *data, size_t size, size_t nmemb, void
     size_t realsize = size * nmemb;
     struct curl_memory_struct *mem = (struct curl_memory_struct *)userp;
     
-    char *ptr = std:realloc(mem->ptr, mem->size + realsize + 1);
+    char *ptr = std::realloc(mem->ptr, mem->size + realsize + 1);
     if(ptr == NULL)
         return 0;  /* out of memory! */
     
